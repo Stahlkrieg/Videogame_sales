@@ -5,4 +5,4 @@ table = pd.read_csv(filepath_or_buffer=r"C:\Users\ERIK\Documents\Documentos\Proj
 print(table.loc[0])
 print(table.shape)
 print(table.columns)
-print(table.tail())
+print(table.tail()) 
