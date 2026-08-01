@@ -25,6 +25,6 @@ sns.scatterplot(data=table, x='EU_Sales', y='NA_Sales')
 plt.show()
 
 #Which genre has the most titles?
-#print(sales[num_wii].value_counts())
+
 table['Genre'].value_counts().plot.bar(title='#Titles per Genre', xlabel='Genres', ylabel='#Titles')
 plt.show()
