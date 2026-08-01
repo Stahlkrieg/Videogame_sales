@@ -6,7 +6,7 @@ table = pd.read_csv(filepath_or_buffer=r"C:\Users\ERIK\Documents\Documentos\Proj
 
 #What were the top 5 most sold games?
 top_sales = table[['Name', 'Global_Sales']].nlargest(5, 'Global_Sales')
-top_sales.plot.bar(title='Top 5 most sold games', xlabel='Name', ylabel='Global Sales (millions)')
+top_sales.set_index('Name')['Global_Sales'].plot.bar(title='Top 5 most sold games', ylabel='Global Sales (millions)')
 plt.show()
 
 
